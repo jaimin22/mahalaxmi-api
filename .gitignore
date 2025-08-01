@@ -1,0 +1,9 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/MahalaxmiAPI/bin
+/MahalaxmiAPI/obj
+/.vs/MahalaxmiAPI/config
+/MahalaxmiAPI/.vs
+/packages
