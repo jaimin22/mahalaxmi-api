@@ -229,6 +229,7 @@
     <Compile Include="Controllers\CustomerMasterController.cs" />
     <Compile Include="Controllers\ContractStatusController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\ImportOrdersController.cs" />
     <Compile Include="Controllers\MyPlanningController.cs" />
     <Compile Include="Controllers\MyOrderController.cs" />
     <Compile Include="Controllers\PriceListController.cs" />
@@ -285,6 +286,7 @@
     <Compile Include="Models\DataModels\UserMaster.cs" />
     <Compile Include="Models\DataModels\AppVersion.cs" />
     <Compile Include="Models\DataModels\UserProfileDetail.cs" />
+    <Compile Include="Models\DispatchOrdersModel.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="ModelView\weekView.cs" />
     <Compile Include="ModelView\PriceListView.cs" />

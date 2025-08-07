@@ -1,12 +1,9 @@
-﻿using System;
+﻿using MahalaxmiAPI.Models.DataModels;
+using MahalaxmiAPI.ModelView;
+using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Net;
-using System.Net.Http;
 using System.Web.Http;
-using Microsoft.AspNet.Identity;
-using MahalaxmiAPI.Models.DataModels;
-using MahalaxmiAPI.ModelView;
 
 namespace MahalaxmiAPI.Controllers
 {
