@@ -229,6 +229,7 @@
     <Compile Include="Controllers\CustomerMasterController.cs" />
     <Compile Include="Controllers\ContractStatusController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\EmailSentController.cs" />
     <Compile Include="Controllers\ImportOrdersController.cs" />
     <Compile Include="Controllers\MyPlanningController.cs" />
     <Compile Include="Controllers\MyOrderController.cs" />

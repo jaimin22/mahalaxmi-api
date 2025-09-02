@@ -2,6 +2,7 @@
 using MahalaxmiAPI.Models.DataModels;
 using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 
 
@@ -11,9 +12,24 @@ using System.Web.Http;
 
 namespace MahalaxmiAPI.Controllers
 {
-    [Authorize]
+    //[Authorize]
     public class ImportOrdersController : ApiController
     {
+        private string GetDate(string date)
+        {
+            string input = date; // DD/MM/YYYY
+            if (DateTime.TryParseExact(input, "dd/MM/yyyy",
+                CultureInfo.InvariantCulture, DateTimeStyles.None, out var dt))
+            {
+                string output = dt.ToString("dd/MMM/yyyy", CultureInfo.InvariantCulture); // -> "19/Aug/2025"
+                return output;
+            }
+            else
+            {
+                Console.WriteLine("Invalid date format.");
+                return date;
+            }
+        }
         public IHttpActionResult PostOrders(List<DispatchOrdersModel> dispatchOrders)
         {
             try
@@ -36,10 +52,10 @@ namespace MahalaxmiAPI.Controllers
                             var order = new salesorder()
                             {
                                 SrNo = srNo.ToString(),
-                                SoldTo = t.SoldTo,
-                                SoldToCode = t.CustomerNameSoldTo,
+                                SoldTo = t.CustomerNameSoldTo,
+                                SoldToCode = t.SoldTo,
                                 DCPINo = t.DcpiNo,
-                                DCPIDate = t.DcpiDt,
+                                DCPIDate = GetDate(t.DcpiDt),
                                 Material = t.Material,
                                 Qty = t.Qty?.ToString(),
                                 UOM = t.Uom,
