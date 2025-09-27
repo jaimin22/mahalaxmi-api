@@ -178,26 +178,26 @@ namespace MahalaxmiAPI.Controllers
 
                 // Row cells
                 sb.AppendFormat(@"
-            <td style='border-left:1px solid #DDDDDD; border-bottom:1px solid #DDDDDD; padding:3px; text-align:right;'>{0}</td>
-            <td style='border-left:1px solid #DDDDDD; border-bottom:1px solid #DDDDDD; padding:3px;'>{1}</td>
-            <td style='border-left:1px solid #DDDDDD; border-bottom:1px solid #DDDDDD; padding:3px;'>{2}</td>
-            <td style='border-left:1px solid #DDDDDD; border-bottom:1px solid #DDDDDD; padding:3px;'>{3}</td>
-            <td style='border-left:1px solid #DDDDDD; border-bottom:1px solid #DDDDDD; padding:3px; text-align:right;'>{4}</td>
-            <td style='border-left:1px solid #DDDDDD; border-bottom:1px solid #DDDDDD; padding:3px;'>{5}</td>
-            <td style='border-left:1px solid #DDDDDD; border-bottom:1px solid #DDDDDD; padding:3px; text-align:right;'>{6}</td>
-            <td style='border-left:1px solid #DDDDDD; border-bottom:1px solid #DDDDDD; padding:3px; text-align:right;'>{7}</td>
-            <td style='border-left:1px solid #DDDDDD; border-bottom:1px solid #DDDDDD; padding:3px; text-align:right;'><b>{8}</b></td>
-            <td style='border-left:1px solid #DDDDDD; border-bottom:1px solid #DDDDDD; padding:3px;'>{9}</td>
-            <td style='border-left:1px solid #DDDDDD; border-bottom:1px solid #DDDDDD; padding:3px;'>{10}</td>
-            <td style='border-left:1px solid #DDDDDD; border-bottom:1px solid #DDDDDD; padding:3px;'>{11}</td>
-            <td style='border-left:1px solid #DDDDDD; border-bottom:1px solid #DDDDDD; padding:3px;'>{12}</td>
-            <td style='border-left:1px solid #DDDDDD; border-bottom:1px solid #DDDDDD; padding:3px;'>{13}</td>
-            <td style='border-left:1px solid #DDDDDD; border-bottom:1px solid #DDDDDD; padding:3px;'>{14}</td>
-            <td style='border-left:1px solid #DDDDDD; border-bottom:1px solid #DDDDDD; padding:3px;'>{15}</td>
-            <td style='border-left:1px solid #DDDDDD; border-bottom:1px solid #DDDDDD; padding:3px;'>{16}</td>
-            <td style='border-left:1px solid #DDDDDD; border-bottom:1px solid #DDDDDD; padding:3px; text-align:right;'>{17}</td>
-            <td style='border-left:1px solid #DDDDDD; border-bottom:1px solid #DDDDDD; padding:3px;'>{18}</td>
-            <td style='border-left:1px solid #DDDDDD; border-bottom:1px solid #DDDDDD; padding:3px; text-align:right;'>{19}</td>",
+                                <td style='border-left:1px solid #DDDDDD; border-bottom:1px solid #DDDDDD; padding:3px; text-align:right;'>{0}</td>
+                                <td style='border-left:1px solid #DDDDDD; border-bottom:1px solid #DDDDDD; padding:3px;'>{1}</td>
+                                <td style='border-left:1px solid #DDDDDD; border-bottom:1px solid #DDDDDD; padding:3px;'>{2}</td>
+                                <td style='border-left:1px solid #DDDDDD; border-bottom:1px solid #DDDDDD; padding:3px;'>{3}</td>
+                                <td style='border-left:1px solid #DDDDDD; border-bottom:1px solid #DDDDDD; padding:3px; text-align:right;'>{4}</td>
+                                <td style='border-left:1px solid #DDDDDD; border-bottom:1px solid #DDDDDD; padding:3px;'>{5}</td>
+                                <td style='border-left:1px solid #DDDDDD; border-bottom:1px solid #DDDDDD; padding:3px; text-align:right;'>{6}</td>
+                                <td style='border-left:1px solid #DDDDDD; border-bottom:1px solid #DDDDDD; padding:3px; text-align:right;'>{7}</td>
+                                <td style='border-left:1px solid #DDDDDD; border-bottom:1px solid #DDDDDD; padding:3px; text-align:right;'><b>{8}</b></td>
+                                <td style='border-left:1px solid #DDDDDD; border-bottom:1px solid #DDDDDD; padding:3px;'>{9}</td>
+                                <td style='border-left:1px solid #DDDDDD; border-bottom:1px solid #DDDDDD; padding:3px;'>{10}</td>
+                                <td style='border-left:1px solid #DDDDDD; border-bottom:1px solid #DDDDDD; padding:3px;'>{11}</td>
+                                <td style='border-left:1px solid #DDDDDD; border-bottom:1px solid #DDDDDD; padding:3px;'>{12}</td>
+                                <td style='border-left:1px solid #DDDDDD; border-bottom:1px solid #DDDDDD; padding:3px;'>{13}</td>
+                                <td style='border-left:1px solid #DDDDDD; border-bottom:1px solid #DDDDDD; padding:3px;'>{14}</td>
+                                <td style='border-left:1px solid #DDDDDD; border-bottom:1px solid #DDDDDD; padding:3px;'>{15}</td>
+                                <td style='border-left:1px solid #DDDDDD; border-bottom:1px solid #DDDDDD; padding:3px;'>{16}</td>
+                                <td style='border-left:1px solid #DDDDDD; border-bottom:1px solid #DDDDDD; padding:3px; text-align:right;'>{17}</td>
+                                <td style='border-left:1px solid #DDDDDD; border-bottom:1px solid #DDDDDD; padding:3px;'>{18}</td>
+                                <td style='border-left:1px solid #DDDDDD; border-bottom:1px solid #DDDDDD; padding:3px; text-align:right;'>{19}</td>",
                     (i + 1),
                     o.DCPINo, o.DCPIDate, o.Material, qty, o.UOM, amt, tax, totalAmtVal,
                     o.TruckNo, o.Transporter, o.RetailInvoice, o.ExciseInv, o.Payer, o.ShipTo, o.PayTerm,

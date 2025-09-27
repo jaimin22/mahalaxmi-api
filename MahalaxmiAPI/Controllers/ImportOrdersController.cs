@@ -69,7 +69,7 @@ namespace MahalaxmiAPI.Controllers
                                 ExciseInv = t.GstInvoice,
                                 OrderNo = t.OrderNo,
                                 ShipToCode = t.ShipTo,
-                                ShipTo = t.CustomerNameShipTo,
+                                ShipTo = t.CustomerNameShipTo + ", " + t.ShipToCity,
                                 Payer = decimal.TryParse(t.Payer, out decimal payerVal) ? payerVal : (decimal?)null,
                                 Grade = t.BatchNo,
                                 InstrumentNumber = t.PmtMethod, // Not available in DispatchOrdersModel
