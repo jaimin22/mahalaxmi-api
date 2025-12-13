@@ -215,8 +215,10 @@ namespace MahalaxmiAPI.Controllers
             {
                 return BadRequest(ModelState);
             }
-
-            IdentityResult result = await UserManager.AddPasswordAsync(User.Identity.GetUserId(), model.NewPassword);
+            string userId = User.Identity.GetUserId();
+            var token = UserManager.GeneratePasswordResetToken(userId);
+            IdentityResult result = UserManager.ResetPassword(userId, token, model.NewPassword);
+            //IdentityResult result = await UserManager.AddPasswordAsync(User.Identity.GetUserId(), model.NewPassword);
 
             if (!result.Succeeded)
             {

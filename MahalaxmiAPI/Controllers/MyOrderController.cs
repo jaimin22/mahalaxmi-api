@@ -78,7 +78,7 @@ namespace MahalaxmiAPI.Controllers
 
                     //SmtpClient client = new SmtpClient();
                     string email = ConfigurationManager.AppSettings["email"];
-                    string password = ConfigurationManager.AppSettings["email"];
+                    string password = ConfigurationManager.AppSettings["emailPassword"];
                     SmtpClient client = new SmtpClient("smtp.gmail.com", 587)
                     {
                         Credentials = new NetworkCredential(email, password),
@@ -88,6 +88,7 @@ namespace MahalaxmiAPI.Controllers
                     client.DeliveryMethod = SmtpDeliveryMethod.Network;
 
                     string toEmailId = "info@mahalaxmichemicals.com";
+                    //string toEmailId = "jaimin@techgroot.com";
 
                     if (!string.IsNullOrEmpty(userDetails.CustomerEmailId))
                     {
